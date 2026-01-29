@@ -17,17 +17,15 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
-        <nav>
-          <ul class="menu">
-            <li class="menu__item"><a href="#about">О себе</a></li>
-            <li class="menu__item"><a href="#interests">Интересы</a></li>
-            <li class="menu__item"><a href="#skills">Навыки</a></li>
-            <li class="menu__item"><a href="#photo">Фото</a></li>
-            <li class="menu__item"><a href="#footer">Контакты</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav>
+        <ul class="menu">
+          <li class="menu__item"><a href="#about">О себе</a></li>
+          <li class="menu__item"><a href="#interests">Интересы</a></li>
+          <li class="menu__item"><a href="#skills">Навыки</a></li>
+          <li class="menu__item"><a href="#photo">Фото</a></li>
+          <li class="menu__item"><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="me">
@@ -49,51 +47,51 @@
       <section class="about" id="about">
         <div class="about__wrapper">
           <h2 class="about__start">О себе</h2>
-          <div class="about__facts">
-            <div class="about__facts__item">
+          <ul class="about__facts">
+            <li class="about__facts__item">
               <h3>Училась в кадетке</h3>
               <div class="about__facts__text">
                 С 5 класса я училась в кадетском корпусе. Это прибавило мне
                 дисциплинированности, но, к сожалению, не во всем.
               </div>
-            </div>
-            <div class="about__facts__item">
+            </li>
+            <li class="about__facts__item">
               <h3>Студентка</h3>
               <div class="about__facts__text">
                 Сейчас я обучаюсь на 3-ем курсе университета, на специальности
                 "Прикладная информатика в экономике и бизнесе".
               </div>
-            </div>
-            <div class="about__facts__item">
+            </li>
+            <li class="about__facts__item">
               <h3>Что-то еще</h3>
               <div class="about__facts__text">
                 Я не знаю что еще писать, пусть тут будет какой-нибудь текст.
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="interests" id="interests">
         <div class="interests__wrapper">
           <h2 class="interests__start">Интересы</h2>
-          <div class="interests__points">
-            <div class="interests__points__item">
+          <ul class="interests__points">
+            <li class="interests__points__item">
               <h3 class="interests__points__text">Рисование</h3>
               <img
                 class="interests__photo"
                 src="./img/рисунок.jpg"
                 alt="рисунок"
               />
-            </div>
-            <div class="interests__points__item">
+            </li>
+            <li class="interests__points__item">
               <h3 class="interests__points__text">Путешествия</h3>
               <img
                 class="interests__photo"
                 src="./img/турция.jpg"
                 alt="рисунок"
               />
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="skills" id="skills">
@@ -141,31 +139,43 @@
               class="photo__points__item group1"
               src="./img/фото1.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
             <img
               class="photo__points__item group1"
               src="./img/фото2.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
             <img
               class="photo__points__item group2"
               src="./img/фото3.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
             <img
               class="photo__points__item group2"
               src="./img/фото4.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
             <img
               class="photo__points__item group3"
               src="./img/фото5.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
             <img
               class="photo__points__item group3"
               src="./img/фото7.jpg"
               alt="Фото"
+              width="541"
+              height="541"
             />
           </div>
           <nav class="pagination">
@@ -179,13 +189,27 @@
       </section>
     </main>
     <footer class="footer" id="footer">
-        <div class="footer__wrapper">
-            <h3 class="footer__start">Контакты</h3>
-            <div class="footer__points">
-                <a href="https://t.me/zaayvvv" target="_blank" class="footer__points__item">Telegram</a>
-                <a href="https://vk.com/wrslw" target="_blank" class="footer__points__item">Вконтакте</a>
-            </div>
-        </div>
+      <div class="footer__wrapper">
+        <h3 class="footer__start">Контакты</h3>
+        <ul class="footer__points">
+          <li>
+            <a
+              href="https://t.me/zaayvvv"
+              target="_blank"
+              class="footer__points__item"
+              >Telegram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://vk.com/wrslw"
+              target="_blank"
+              class="footer__points__item"
+              >Вконтакте</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

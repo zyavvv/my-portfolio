@@ -16,6 +16,9 @@
 .footer__points {
     display: flex;
     gap: 32px;
+
+    padding: 0;
+    list-style: none;
 }
 
 .footer__points__item {

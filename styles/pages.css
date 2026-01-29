@@ -40,6 +40,12 @@
     .me__photo {
         max-width: 350px;
     }
+    .me__name {
+        margin-bottom: 24px;
+    }
+    .me__text {
+        max-width: 350px;
+    }
 }
 
 /*about*/
@@ -61,6 +67,8 @@
 
 .about__facts {
     margin-bottom: 32px;
+    padding: 0;
+    list-style: none;
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -91,13 +99,7 @@
     margin-top: 15px;
 }
 
-@media (max-width: 1100px) {
-    .about__facts {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 960px) {
     .about__facts {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -122,6 +124,7 @@
 
 .interests__points {
     margin-bottom: 32px;
+    padding: 0;
 
     display: flex;
     gap: calc(1220px - 32px * 2 - 500px * 2);
@@ -129,6 +132,9 @@
     color: var(--color-text);
 }
 
+.interests__points__item {
+    list-style: none;
+}
 
 .interests__photo {
     max-width: 500px;
@@ -225,7 +231,6 @@
 }
 
 .photo__points__item {
-    max-width: 100%;
     display: none;
     border-radius: var(--border-10);
 }
@@ -276,8 +281,23 @@
     display: block;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1220px) {
     .photo__points {
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .photo__points__item {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .photo__points__item {
+        width: 250px;
+        height: 250px;
     }
 }

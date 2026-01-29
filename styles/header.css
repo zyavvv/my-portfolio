@@ -1,12 +1,10 @@
 .header {
     position: sticky;
     top: 5px;
-}
-
-.header__wrapper {
     max-width: 1220px;
     margin: 24px auto;
     padding: 0 24px;
+    z-index: 1;
 }
 
 .menu {
@@ -25,6 +23,7 @@
     font-size: 18px;
     font-weight: 700;
     color: var(--color-text);
+    transition: color 0.3s ease;
 }
 
 .menu__item a:hover {
